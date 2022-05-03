@@ -11,16 +11,19 @@ import org.springframework.context.annotation.Bean
 
 @SpringBootApplication
 class SbkotlindemoApplication {
-	/**
-	 * Add general description to the openAPI doc.
-	 */
-	@Bean
-	fun customOpenApi(): OpenAPI {
-		val contact: Contact = Contact().name("Jacob Lin").email("jacoblindev@gmail.com")
-		return OpenAPI().info(Info().title("Learning Spring Boot with Kotlin").contact(contact).version("1.0.0").description("Demo project of Spring Boot + Kotlin + H2 + JDBC").license(
-			License().name("MIT")
-		))
-	}
+    /**
+     * Add general description to the openAPI doc.
+     */
+    @Bean
+    fun customOpenApi(): OpenAPI {
+        return OpenAPI().info(
+            Info().title("Learning Spring Boot with Kotlin")
+                .contact(Contact().name("Jacob Lin").email("jacoblindev@gmail.com"))
+                .version("1.0.0")
+                .description("Demo project of Spring Boot + Kotlin + H2 + JDBC")
+                .license(License().name("MIT"))
+        )
+    }
 }
 
 fun main(args: Array<String>) {
