@@ -22,8 +22,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.h2database:h2")
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
-    implementation("org.springdoc:springdoc-openapi-ui:1.6.7")
-	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.7")
+    implementation("org.springdoc:springdoc-openapi-ui:1.6.8")
+	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.8")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
